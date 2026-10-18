@@ -100,7 +100,7 @@ function renderQuestion() {
     answerButton.textContent = answer;
 
     answerButton.addEventListener("click", function () {
-      // Disable all answer buttons after one selection
+      //disables all answer buttons after one selection
       const buttons = answersContainer.querySelectorAll("button");
 
       buttons.forEach(button => {
