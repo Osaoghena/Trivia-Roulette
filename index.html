@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Quiz Assignment</title>
+
+  <style>
+      body {
+          font-family: Cambria, sans-serif;
+          background-color: #9DC183;
+          text-align: center;
+      }
+
+      .quiz-container {
+          background: white;
+          max-width: 600px;
+          margin: auto;
+          padding: 30px;
+      }
+
+      #question {
+          font-size: 20px;
+          margin: 25px 0;
+      }
+
+      #answers {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      button {
+          padding: 12px;
+          font-size: 16px;
+          background-color: #D0F0C0;
+      }
+
+      button:hover:not(:disabled) {
+          background-color: #A9BA9D;
+      }
+
+      #new-question {
+          margin-top: 20px;
+          background-color: #4F7942;
+          color: white;
+      }
+
+  </style>
+</head>
+
+<body>
+<div class="quiz-container">
+  <h1>Trivia Quiz</h1>
+
+  <p id="score">Score: 0 / 0</p>
+
+  <div id="question">
+    Hit "New Question" to begin!
+  </div>
+
+  <div id="answers"></div>
+
+  <p id="feedback" aria-live="polite"></p>
+
+  <button id="new-question">New Question</button>
+</div>
+
+<script src="assignment8.js"></script>
+</body>
+</html>
